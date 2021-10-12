@@ -166,12 +166,17 @@ IsBuildingHasPartsChecker::IsBuildingHasPartsChecker()
   m_types.push_back(classif().GetTypeByPath({"building", "has_parts"}));
 }
 
+/// @todo Take out into mapcss styles definition.
 IsHatchingTerritoryChecker::IsHatchingTerritoryChecker()
 {
   Classificator const & c = classif();
-  char const * arr[][2] = {{"leisure", "nature_reserve"},
-                           {"boundary", "national_park"},
-                           {"landuse", "military"}};
+  char const * arr[][2] = {
+    {"leisure", "nature_reserve"},
+    {"boundary", "national_park"},
+    {"landuse", "military"},
+    {"natural", "wetland"}
+  };
+
   for (auto const & p : arr)
     m_types.push_back(c.GetTypeByPath({p[0], p[1]}));
 }
