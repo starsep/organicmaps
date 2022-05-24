@@ -17153,14 +17153,19 @@ cont {
 cont {
   name: "highway-path-bicycle"
   element {
+    scale: 13
+    lines {
+      width: 1.0
+      color: 7224647
+      priority: 1310
+      cap: BUTTCAP
+    }
+  }
+  element {
     scale: 14
     lines {
-      width: 0.9
-      color: 10506258
-      dashdot {
-        dd: 1.52
-        dd: 1.35
-      }
+      width: 1.2
+      color: 7224647
       priority: 1310
       cap: BUTTCAP
     }
@@ -17168,12 +17173,8 @@ cont {
   element {
     scale: 15
     lines {
-      width: 1.1
-      color: 10506258
-      dashdot {
-        dd: 1.7
-        dd: 1.26
-      }
+      width: 1.4
+      color: 7224647
       priority: 1310
       cap: BUTTCAP
     }
@@ -17189,12 +17190,8 @@ cont {
   element {
     scale: 16
     lines {
-      width: 1.8
-      color: 10506258
-      dashdot {
-        dd: 2.5
-        dd: 1.8
-      }
+      width: 1.6
+      color: 7224647
       priority: 1310
     }
     path_text {
@@ -17209,12 +17206,8 @@ cont {
   element {
     scale: 17
     lines {
-      width: 2.0
-      color: 10506258
-      dashdot {
-        dd: 3.0
-        dd: 1.8
-      }
+      width: 1.8
+      color: 7224647
       priority: 1310
     }
     path_text {
@@ -17229,12 +17222,8 @@ cont {
   element {
     scale: 18
     lines {
-      width: 3.0
-      color: 10506258
-      dashdot {
-        dd: 4.0
-        dd: 2.7
-      }
+      width: 2.0
+      color: 7224647
       priority: 1310
     }
     path_text {
@@ -17249,12 +17238,8 @@ cont {
   element {
     scale: 19
     lines {
-      width: 4.0
-      color: 10506258
-      dashdot {
-        dd: 6.0
-        dd: 3.6
-      }
+      width: 2.2
+      color: 7224647
       priority: 1310
     }
     path_text {

@@ -797,7 +797,8 @@ line|z19-[highway=service]
 line|z13-[highway=pedestrian],
 line|z13-[highway=ford]
 {color: @pedestrian;opacity: 1;}
-line|z13-[highway=cycleway]
+line|z13-[highway=cycleway],
+line|z13-[highway=path][bicycle?]
 {color: @cycleway;opacity: 1;}
 line|z13-[highway=construction],
 line|z13-[highway=proposed]
@@ -818,7 +819,7 @@ line|z14-[highway=track],
 line|z14-[highway=raceway],
 line|z14-[leisure=track],
 {color: @track;opacity: 1;}
-line|z14-[highway=path],
+line|z14-[highway=path][!bicycle],
 line|z14-[route=hiking],
 {color: @path;opacity: 1;}
 line|z14-[highway=bridleway]
@@ -886,18 +887,25 @@ line|z16-[highway=footway][bridge?]::bridgeblack,
 
 /* 8.4 Cycleway 13-22 ZOOM */
 
+line|z13[highway=path][bicycle?],
 line|z13[highway=cycleway]
 {width: 1;}
+line|z14[highway=path][bicycle?],
 line|z14[highway=cycleway]
 {width: 1.2;}
+line|z15[highway=path][bicycle?],
 line|z15[highway=cycleway]
 {width: 1.4;}
+line|z16[highway=path][bicycle?],
 line|z16[highway=cycleway]
 {width: 1.6;}
+line|z17[highway=path][bicycle?],
 line|z17[highway=cycleway]
 {width: 1.8;}
+line|z18[highway=path][bicycle?],
 line|z18[highway=cycleway]
 {width: 2;}
+line|z19-[highway=path][bicycle?],
 line|z19-[highway=cycleway]
 {width: 2.2;}
 
@@ -950,32 +958,32 @@ line|z19-[leisure=track]
 
 line|z14[highway=track],
 {width:0.9;dashes: 2.52,1.35;}
-line|z14[highway=path],
+line|z14[highway=path][!bicycle],
 line|z14[route=hiking],
 {width:0.9;dashes: 1.52,1.35;}
 line|z15[highway=track],
 {width:1.1;dashes: 2.7,1.26;}
-line|z15[highway=path],
+line|z15[highway=path][!bicycle],
 line|z15[route=hiking],
 {width:1.1;dashes: 1.7,1.26;}
 line|z16[highway=track],
 {width:1.8;dashes: 3.6,1.8;}
-line|z16[highway=path],
+line|z16[highway=path][!bicycle],
 line|z16[route=hiking]
 {width:1.8;dashes: 2.5,1.8;}
 line|z17[highway=track],
 {width:2;dashes: 4.5,1.8;}
-line|z17[highway=path],
+line|z17[highway=path][!bicycle],
 line|z17[route=hiking]
 {width:2;dashes: 3.0,1.8;}
 line|z18[highway=track],
 {width:3;dashes: 7.2,2.7;}
-line|z18[highway=path],
+line|z18[highway=path][!bicycle],
 line|z18[route=hiking]
 {width:3;dashes: 4.0,2.7;}
 line|z19-[highway=track],
 {width: 4;dashes: 9,3.6;}
-line|z19-[highway=path],
+line|z19-[highway=path][!bicycle],
 line|z19-[route=hiking]
 {width: 4;dashes: 6,3.6;}
 
